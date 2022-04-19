@@ -1,0 +1,43 @@
+Python Fundamentals
+===================
+
+1. 1st steps in Python
+2. Using variables
+3. Performing simple input and output
+4. Data types
+5. Using if statements
+6. using multiple if statements
+7. Creating complex logical expressions
+
+Why Python?
+-----------
+- Python is the most popular programming language according to IEEE Spectrum popularity index and TIOBE index.
+- Popularity:
+  - Available tutorials, examples, documentation. 
+  - Open-source external libraries. 
+  - Accessible support and solutions on forums, blogs, videos ...
+  
+- Easy to learn:
+  - Emphasizes readability.
+  - Guiding principles for Python development - 'Zen of Python'. 
+  
+- Industrial application:
+  - Supports real projects.
+  - Supports object-orientation or functional programming paradigms.
+  - Dominant in machine learning and AI.
+
+
+Mathematical Operators
+----------------------
+
+Description      | Operator |	Example  | Result             |
+-----------------+----------+----------+--------------------|
+Addition	       |     +	  |  2 + 3   | 5                  |
+Subtraction	     |     -    |	 2 - 3	 | -1                 |
+Multiplication   |	   *    |	 2 * 3	 | 6                  |
+Division	       |     /    |	 7 / 3	 | 2.3333333333333335 |
+Integer Division |	  //    |	 7 // 3	 | 2                  |
+Modulo	         |     %    |	 7 % 3   | 1                  |
+Exponentiation	 |    **    |	2 ** 0.5 | 1.4142135623730951 |
+
+  
