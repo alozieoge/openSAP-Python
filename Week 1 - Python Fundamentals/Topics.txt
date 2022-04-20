@@ -126,3 +126,11 @@ Complex Logical Expressions
   
 - Use string methods to validate user input:
   .isdigit(), .isdecimal(), .isspace(), .isalpha(), isalnum()
+
+
+Tip:
+----
+- Always start simple. 
+- Test each building block at each step. 
+- Build up complexity only if tests are satisfied. 
+- Repeat!
