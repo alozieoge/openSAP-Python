@@ -12,6 +12,7 @@ Python Fundamentals
 Why Python?
 -----------
 - Python is the most popular programming language according to IEEE Spectrum popularity index and TIOBE index.
+
 - Popularity:
   - Available tutorials, examples, documentation. 
   - Open-source external libraries. 
@@ -40,4 +41,48 @@ Integer Division |	  //    |	 7 // 3	 | 2                  |
 Modulo	         |     %    |	 7 % 3   | 1                  |
 Exponentiation	 |    **    |	2 ** 0.5 | 1.4142135623730951 |
 
+- Python can handle very large nummbers.
+  - Only limited by the size of machine's internal memory.
   
+
+Variables
+---------
+- Variables hold data. 
+- Data can be assigned to or read from a variable. 
+- Spend the time to use readable and understandable variable names.
+
+
+Input and Output
+----------------
+- Input:   i = input()
+- output:  print(i)
+
+- input() return a string data-type. 
+- To convert the string to a number, you must cast it to an integer int(input()) or a floating point number float(input()).
+
+
+Data types
+---------
+Python primitive data types:
+- Interger e.g. 42, -100, 23, 0
+- Float e.g. 3.142, -0.012, 3.2e10
+- String e.g. "This is a string", 'x', 'aabc123' 
+- Boolean e.g True, False
+
+- Python represents floating point numbers with a precision of 15 or 16 digits in the binary system, allowing it to work with very small or very large numbers. 
+  - This may limit the precision of floating points numbers above 16 digits after the decimal point. 
+  
+- Use type() to check the data type of a variable. 
+- Convert one data type to another by casting.
+
+Logical operators for boolean data types:
+
+Operator | Explanation | Example     |
+---------+-------------+-------------|
+not	     | Negation    | not y       |
+and	     | Logical AND | x and y     |
+or       | Logical OR  | a or b or c |
+
+Casting:
+- Casting an integer (positive or negative) to a boolean always returns True except the integer is 0.
+- Casting a string to a boolean always returns True except the string is empty.
