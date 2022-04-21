@@ -86,3 +86,51 @@ or       | Logical OR  | a or b or c |
 Casting:
 - Casting an integer (positive or negative) to a boolean always returns True except the integer is 0.
 - Casting a string to a boolean always returns True except the string is empty.
+
+
+If Statements
+-------------
+- Conditionals / comparison operators are used to implement decision statements. 
+
+Comparison operators:
+
+Operator | Explanation              |
+---------+--------------------------+
+==       | Equality                 |
+!=       | Inequality               |
+<        | Smaller than             |
+>        | Greater than             |
+<=       | Less than or equal to    |
+>=       | Greater than or equal to |
+
+- Comparing strings in Python actually compares the unicode representation of the sum of the string characters. 
+
+- Indentation denotes code block in a conditional statement. 
+  - Indenting a line / block of code without a condition or loop returns an 'IndentationError'.
+
+
+Multiple If Statements
+----------------------
+- Python allows to check more than one condition; either one after another or nested within themselves. 
+- The sequence of the conditions should be checked i.e. first check more specific conditions before more general ones. 
+
+
+Complex Logical Expressions
+---------------------------
+- Create complex logical expressions by combining conditional statements with logical operators. 
+- By default: 'and' has higher priority than 'or' 
+- Use parentheses to:
+  - Change the order of complex logical expressions. 
+  - Give priority to a conditional expression.
+  - Make an explicit conditional expression.
+  
+- Use string methods to validate user input:
+  .isdigit(), .isdecimal(), .isspace(), .isalpha(), isalnum()
+
+
+Tip:
+----
+- Always start simple. 
+- Test each building block at each step. 
+- Build up complexity only if tests are satisfied. 
+- Repeat!
