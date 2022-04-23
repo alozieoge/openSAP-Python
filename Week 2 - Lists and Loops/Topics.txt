@@ -103,3 +103,17 @@ Methods
 >> .remove(item)
 - Removes the first occurence of an item from a list.
 
+
+Iterating with the For Loop
+----------------------------
+- Loops enable us to access / iterate over each individual element in a list or character in a string. 
+- Python has 2 different loops: 
+  1. for loop
+  2. while loop
+  
+For Loop
+--------
+>> for sequence_item in sequence:
+>>     statement 1
+>>     statement 2
+>>     :
