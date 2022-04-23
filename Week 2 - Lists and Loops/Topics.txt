@@ -61,3 +61,45 @@ Accessing and Modifying List Items
 - Strings also support the basic list operations.
 
 
+List Functions and Methods
+--------------------------
+- Sort
+- Append
+- Max / Min
+- Delete element
+- Delete value
+
+Functions
+---------
+>> len(my_list)
+- Returns the number of elements in a list. 
+
+>> min(my_list) or max(my_list)
+- Returns the minimum value or maximum value in a list. 
+- All list items must be 'orderable' and of the same type else a TypeError is returned.
+
+>> sorted_list = sorted(my_list)
+- Returns a new list with items sorted in ascending order by default. 
+- List items must be 'orderable' and of the same type else a TypeError is returned. 
+
+Methods
+-------
+- Methods are functions that belong to a class and are applied to an instance / object of the class.
+- They are invoked by adding .method_name(parameters) after the list.
+
+>> .sort()
+- Returns the same list sorted in ascending order by default i.e sorts inplace. 
+
+>> .append(new_item)
+- Adds a new element to the end of a list. 
+
+>> .pop()
+- Removes the last item in a list and returns it. 
+
+>> .insert(index, new_item)
+- Inserts a new element at a given index position in a list. 
+- Other elements after the index are shifted to the right of the inserted element.
+
+>> .remove(item)
+- Removes the first occurence of an item from a list.
+
