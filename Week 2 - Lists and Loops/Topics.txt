@@ -1,0 +1,119 @@
+Lists and Loops
+===============
+
+Objectives
+----------
+1. What are Python lists?
+2. Using an index to access list elements
+3. List methods and functions
+4. Iterating using for loop
+5. Using ranges to create sequence of numbers
+6. Sequences
+7. Slicing
+8. List comprehension
+
+
+What are Python Lists
+---------------------
+>> my_list = [item, item2, item3, ...]
+
+Motivation:
+- Primitive data types are limited to contain only 1 item. 
+- Lists can store multiple items or elements.
+- Lists can contain objects of different data types.
+
+
+Basic List Operations
+---------------------
+
+Description     | Operator | Example                  | Result
+----------------+----------+--------------------------+-------------------
+Concatenation   | +        | [1, 2] + [3, 4]          | [1, 2, 3, 4]
+Multiplication  | *        | [1, 2] * 3 or 3 * [1, 2] |	[1, 2, 1, 2, 1, 2]
+Containment     | in       | 3 in [1, 2, 3]           | True
+
+- The multiplication operator (*) only works if the operands are a list and an integer. 
+- The size of the list is increased by repeating the list elements n number of times, where n is the multiplied integer.
+
+
+Accessing and Modifying List Items
+----------------------------------
+>> item = my_list[item_index]
+
+- Python lists are zero-indexed.
+- Use the item index to access an item in a list. 
+- A string is a list of characters and has similar behaviour as lists. 
+
+- Lists can also be indexed from the end, starting with -1.
+>> last_item = my_list[-1]
+
+- Lists are mutable i.e. the elements of a list can be changed. 
+>> new_value = my_list[item_index]
+
+- Indexing a list with a non-existing index returns an "IndexError: list index out of range"
+
+- A list can contain 1 or multiple lists, each of which can contain lists, each of which can contain lists ...
+>> list_of_lists = [[list1_item_1, list1_item_2, ...], [list2_item1, list2_item2, ...], ...]
+
+- The characters in a string can be accessed by indexing. 
+>> n_char = my_string[n_index]
+
+- Strings also support the basic list operations.
+
+
+List Functions and Methods
+--------------------------
+- Sort
+- Append
+- Max / Min
+- Delete element
+- Delete value
+
+Functions
+---------
+>> len(my_list)
+- Returns the number of elements in a list. 
+
+>> min(my_list) or max(my_list)
+- Returns the minimum value or maximum value in a list. 
+- All list items must be 'orderable' and of the same type else a TypeError is returned.
+
+>> sorted_list = sorted(my_list)
+- Returns a new list with items sorted in ascending order by default. 
+- List items must be 'orderable' and of the same type else a TypeError is returned. 
+
+Methods
+-------
+- Methods are functions that belong to a class and are applied to an instance / object of the class.
+- They are invoked by adding .method_name(parameters) after the list.
+
+>> .sort()
+- Returns the same list sorted in ascending order by default i.e sorts inplace. 
+
+>> .append(new_item)
+- Adds a new element to the end of a list. 
+
+>> .pop()
+- Removes the last item in a list and returns it. 
+
+>> .insert(index, new_item)
+- Inserts a new element at a given index position in a list. 
+- Other elements after the index are shifted to the right of the inserted element.
+
+>> .remove(item)
+- Removes the first occurence of an item from a list.
+
+
+Iterating with the For Loop
+----------------------------
+- Loops enable us to access / iterate over each individual element in a list or character in a string. 
+- Python has 2 different loops: 
+  1. for loop
+  2. while loop
+  
+For Loop
+--------
+>> for sequence_item in sequence:
+>>     statement 1
+>>     statement 2
+>>     :
