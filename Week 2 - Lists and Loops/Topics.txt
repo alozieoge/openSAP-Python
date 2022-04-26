@@ -117,3 +117,38 @@ For Loop
 >>     statement 1
 >>     statement 2
 >>     :
+
+
+Ranges
+------
+>> range(start, step, step)
+- Used to create a sequence of numbers.
+- Works closely with for loops.
+
+Tip: For 'if' statements in a 'for' loop, handle the strictest case first and then subsequent compleixty in the 'elif' statements.
+
+Sequences
+---------
+List, range, tuples, string
+
+Features:
+- Contain several elements. 
+- Elements are ordered. 
+- Access elements via indexing. 
+- Has a length.
+
+Sequence Operations
+-------------------
+
+Operation | Return value
+----------+---------------
+len(s)    | Length of the sequence
+min(s)    | Smallest element of the sequence
+max(s)    | Largest element of the sequence
+s + t     | Concatenation of s and t
+i * s     | A new sequence consisting of the sequence s i times consecutively
+s[i]      | The element at index i of sequence s
+i in s    | Checks if the sequence s contains the element i
+
+- A range cannot be multiplied by an integer or concatenated to another range to get a longer range. 
+- Doing these operations return a TypeError for unsupported operand type(s).
