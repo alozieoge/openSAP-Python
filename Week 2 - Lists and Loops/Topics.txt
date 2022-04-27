@@ -152,3 +152,27 @@ i in s    | Checks if the sequence s contains the element i
 
 - A range cannot be multiplied by an integer or concatenated to another range to get a longer range. 
 - Doing these operations return a TypeError for unsupported operand type(s).
+
+
+Slicing
+-------
+>> my_list[1:10:2]
+- Accesses parts of a sequence i.e. returns a sub-list of the original list, even if it only contains one element.
+- Requires start and end index. 
+- Step is optional and specifies the increment of the index while slicing.
+- Negative indexes are used to start from the end of the sequence. 
+
+Statement        | List items
+-----------------+---------------------------------------------------------------
+list[start:stop] | start to stop-1
+list[start:]	   | start to end of list
+list[:stop]	     | beginning of list to stop-1
+list[:]	         | beginning of list to end of list, basically a copy of the list
+
+List Comprehension
+------------------
+- A compact / concise way to process all or part of the elements in a sequence and return a new list with the results. 
+- Used to build lists, combine multiple lists and filter lists. 
+
+- List comprehension can also replace nested loops. 
+>> combinations = [m + str(n) for m in list1 for n in list2]
