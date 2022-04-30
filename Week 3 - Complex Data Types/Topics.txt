@@ -63,3 +63,23 @@ Functions and Methods:
 >> .values() : Returns all values.
 >> .items() : Retuns all key-value pairs as tuples.
 
+
+When to use lists, tuples or dictionaries
+-----------------------------------------
+
+Lists
+- Recommended when objects of same data type are handled / needed. 
+- Access only by index. 
+
+Tuples
+- Immutable, not changeable. 
+- Structure / number of elements in data is not to be changed. 
+
+Dictionaries
+- Access via key; key is required. 
+- Random access of eleemnts is possible; O(1) time-complexity for access. 
+- Structure of objects can be changed.
+
+- Combination of these types are useful and often necessary. 
+- It is best to think carefully about what is the best data type for every situation.
+
