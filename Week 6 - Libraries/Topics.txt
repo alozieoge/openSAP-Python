@@ -11,3 +11,96 @@ Lessons
 6. Examples of non-standard libraries
 7. Summary
 
+
+What are Libraries?
+-------------------
+- Libraries allow structuring and reusability of code on a large scale.
+  - Prevents confusion, difficulty to maintain, copy-pasting, etc.
+  
+- Modularization : System design architecture that combines several independent components or modules. 
+- It makes software cleaner and more reusable.
+
+Benefits of Modules:
+1. Can be created and tested independent of the system.
+2. Can be reused in other products. 
+3. Can be exchanged upon failure.
+4. Can be upgraded with improved versions.
+
+- Functions provide a low-level form of modularization
+  - has a defined task.
+  - can be developed and tested independent of other functions.
+  - provides abstraction of implementation (inner working) details.
+  
+Types of Python Libraries:
+1. Python standard library: ships with default Python installation.
+2. Python ecosystem: open-source custom libraries developed for specific tasks. Available on Python Package Index (https://pypi.org)
+
+
+Importing Libraries
+-------------------
+- You can import complete libraries or required functions.
+
+- Importing a library creates a namespace into which the functions of the library are imported. 
+- The library namespace can be given an alias and functions can be called from the alias.
+>> import math as m
+>> m.pow(...)
+
+- Importing individual functions from a library is done using the `from ... import ...` statement. 
+>> from math import sin, pi
+>> x = sin(3 * pi / 2)
+
+- Beware of conflicting namespaces with internal function names when directly importing functions from external libraries. 
+- Use the fully-qualified name to avoid such conflicts.
+>> m.sin(...)
+
+- Use the established / popular syntax to import libraries or functions from libraries.
+
+Tip: To write and style Python code in Markdown:
+
+```python
+   ... code goes here ...
+```
+
+Math and Statistics Libraries
+-----------------------------
+- `math`, `random` and `statistics` are part of the Python standard library.
+
+
+Other Standard Libraries
+------------------------
+- `calendar` library: provides functions to work with dates.
+- `csv` library: simplifies handling of CSV files.
+
+- Always check if there is an existing function in the Python standard library before implementing one.
+
+- In the csv library, use the DictReader() when reading files with header row. It creates a dictionary with the column name as the key.
+>> with open("file-to-read.csv") as f:
+>>   dict_reader = csv.DictReader(f)
+>>   for row in dict_reader:
+>>      print(row)
+
+- Write data to a csv file using the csv.DictWriter(). 
+>> with open("file-to-write.csv") as output_file:
+>>    field_names = ["col1", "col2", ... , "col3"]
+>>    writer = csv.DictWriter(output_file, field_names)
+>>    writer.writerows()
+
+
+Installing Additional Libraries
+-------------------------------
+- There are > 100,000 additional Python libraries available.
+
+- To find and install additional libraries:
+  - Google
+  - pypi.org
+  - conda-forge
+  ...
+
+
+Non-standard Python Libraries
+-----------------------------
+- requests: communicate with web servers.
+- BeautifulSoup: parse and analyse web pages.
+- tkinter: create GUIs.
+- Pandas: analyse data.
+- Matplotlib: plot charts, graphs.
