@@ -123,3 +123,25 @@ len()         |  x   |   x   |      x     |
 max()         |  x   |   x   |            |
 max()         |  x   |   x   |            |
 sorted()      |  x   |   x   |            |
+
+
+While Loop
+----------
+- For loops iterate over a sequence. 
+- While loops iterate until a given condition is False. 
+
+>> while (condition):
+>>   ...
+
+- While loops are prone to errors when used as a simple counter. Use for loops instead.
+- Always check the boundaries of the condition when using while loops.
+- Beware of infinite loop.
+
+- A `break` keyword within an `if` statement is used to exit the while loop if the `if` condition is met. 
+- Can be combined with a while True, which is an infinite loop. 
+
+>> while True:
+>>   ...
+>>   if condition:
+>>     break
+>>   ...
