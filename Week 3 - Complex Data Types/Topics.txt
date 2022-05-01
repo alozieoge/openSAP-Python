@@ -1,0 +1,85 @@
+Complex Data Types
+==================
+
+Lessons
+-------
+1. Tuples
+2. Dictionaries
+3. Lists, dictionaries and tuples
+4. Safe dictionary access
+5. Functions and methods for complex data types
+6. While loop
+
+
+Tuples
+------
+- Tuples are sequences similar to lists but use parentheses instead of square brackets. 
+>> my_tuple = (item_1, item_2, ..., item_n)
+
+- Tuples are immutable;
+  - cannot change its content. 
+  - cannot add elements / attributes / values.
+  - cannot delete elements.
+  - cannot change the value of an attribbute.
+  - allow only read-access.
+- else, you get a TypeError - tuple object does not support item assignment.
+
+- You can only assign a new tuple to the same variable.
+  
+- Can be combined wih lists to give a more powerful data structure.
+  
+Basic Operations:
+>> len()
+>> my_tuple[index]
+>> my_tuple[start_index:end_index]
+>> my_tuple.count(value) : Number of elements with value.
+>> my_tuple.index[value] : Index of first element with value.
+>> my_list = list(my_tuple) : Cast tuple into a list
+>> my_tuple = tuple(my_list) : Cast list into a tuple
+
+
+Dictinoaries
+------------
+- A sequence in which each value has a key. 
+- Elements are accessed by their key not index.
+
+- Dictionaries consts of key-value pairs enclosed in curly braces. 
+>> my_dict = { key_1 : value_1, key_2 : value_2, ..., key_n : value_n }
+
+- Dictionaries are mutable: can add, change and delete entries / elements. 
+- Accessing a non-existent key leads to a KeyError.
+
+- In a dictionary, all data types can be values. 
+- Only immutable data types can be keys - string, int, float, boolean, tuple.
+  - This is because mutable data types are unhashable. 
+  
+- Iterating over a dictionary using a for loop returns all the keys.
+>> for key in my_dict:
+>>   print(key, my_dict[key])
+
+Functions and Methods:
+>> len() : number of key-value pairs.
+>> .keys() : Returns all keys.
+>> .values() : Returns all values.
+>> .items() : Retuns all key-value pairs as tuples.
+
+
+When to use lists, tuples or dictionaries
+-----------------------------------------
+
+Lists
+- Recommended when objects of same data type are handled / needed. 
+- Access only by index. 
+
+Tuples
+- Immutable, not changeable. 
+- Structure / number of elements in data is not to be changed. 
+
+Dictionaries
+- Access via key; key is required. 
+- Random access of eleemnts is possible; O(1) time-complexity for access. 
+- Structure of objects can be changed.
+
+- Combination of these types are useful and often necessary. 
+- It is best to think carefully about what is the best data type for every situation.
+
