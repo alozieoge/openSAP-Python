@@ -83,3 +83,65 @@ Dictionaries
 - Combination of these types are useful and often necessary. 
 - It is best to think carefully about what is the best data type for every situation.
 
+
+Safe Dictionary Access
+----------------------
+- Accessing a non-existing key in a dictionary leads to a KeyError.
+
+Solution:
+1. Use keyword `in`
+>> if key in my_dict:
+>>   ...
+>> else:
+>>   ...
+
+2. Use get() method with a custom error message.
+>> my_dict.get(key, default)  // A custom error message can be defined in `default`.
+
+
+Functions and Methods for Complex Data Types
+--------------------------------------------
+
+ Method       | List | Tuple | Dictionary |
+--------------+------+-------+------------+
+.sort()       |  x   |       |            |
+.append(a)    |  x   |       |            |
+.pop(i)       |  x   |       |      x     |
+.insert(i, a) |  x   |       |            |
+.remove(a)    |  x   |       |            |
+.count(a)     |  x   |   x   |            |
+.index(a)     |  x   |   x   |            |
+.keys()       |      |       |      x     |
+.values()     |      |       |      x     |
+.items()      |      |       |      x     |
+
+
+Function      | List | Tuple | Dictionary |
+--------------+------+-------+------------+
+del object[a] |  x   |       |      x     |
+len()         |  x   |   x   |      x     |
+max()         |  x   |   x   |            |
+max()         |  x   |   x   |            |
+sorted()      |  x   |   x   |            |
+
+
+While Loop
+----------
+- For loops iterate over a sequence. 
+- While loops iterate until a given condition is False. 
+
+>> while (condition):
+>>   ...
+
+- While loops are prone to errors when used as a simple counter. Use for loops instead.
+- Always check the boundaries of the condition when using while loops.
+- Beware of infinite loop.
+
+- A `break` keyword within an `if` statement is used to exit the while loop if the `if` condition is met. 
+- Can be combined with a while True, which is an infinite loop. 
+
+>> while True:
+>>   ...
+>>   if condition:
+>>     break
+>>   ...
