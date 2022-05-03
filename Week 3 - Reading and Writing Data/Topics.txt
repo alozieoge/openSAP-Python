@@ -66,5 +66,16 @@ Mode | Description                                             |
  >>   # ...
  >> # file is closed automatically
  
- 
-  
+
+Reading data from files
+-----------------------
+- For loop can be used to loop over the lines in a file and read data. 
+- Use a .strip() method to delete spaces / tabs / newline / line breaks at the beginning and end of each line in the file content. 
+
+- You can only loop through and read the content of a file once because the read cursor / pointer moves from the start to the end of the file content and is not reset. 
+- Use a .seek() method to manually place the read cursor at any position in the file content.
+
+- file.readlines() reads the entire file content in one go without using a for loop.
+
+- You can specify the end argument of a print() statament. By default, the end argument is "\n"
+>> print(<string>, end = "\n")
