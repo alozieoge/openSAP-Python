@@ -40,6 +40,7 @@ Opening and Closing Files
   - reading from and writing to file
 
 - By default, for a program to access a file, the file must be located in the same directory as the source code. 
+- Specify the full path name of a file if not stored in the same directory.
 
 
 Opening file modes
