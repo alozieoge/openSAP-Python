@@ -1,0 +1,81 @@
+Reading and Writing Data
+========================
+
+Units
+-----
+1. Motivation and definition
+2. Opening and closing files
+3. Reading data from files
+4. Writing data to fies
+5. Formatting output
+6. String methods
+
+
+Motivation and Definition
+-------------------------
+- A file: 
+  - contains logically related data 
+  - that is sequentially ordered
+  - which is permanently stored (on a hard drive), and
+  - is identified by a unique name.
+  
+
+Opening and Closing Files
+-------------------------
+3 steps to handling files:
+
+1. Open file.
+>> open()
+
+2. Access / modify data in file (read access / write access). 
+>> .read()
+>> .write()
+
+3. Close file.
+>> .close()
+
+- When opening a file, specify the mode / state of the file for:
+  - reading from file only 
+  - writing to file only
+  - reading from and writing to file
+
+- By default, for a program to access a file, the file must be located in the same directory as the source code. 
+- Specify the full path name of a file if not stored in the same directory.
+
+
+Opening file modes
+------------------
+
+Mode | Description                                             | 
+-----+---------------------------------------------------------+
+ r   | Read-only                                               |
+ w   | Write-only; create new file if no file present          |
+ a   | Append new content to old content                       |
+ r+  | Read & write access                                     |
+ w+  | Write & read access; create new file if no file present |
+ 
+ - Adding a "b" to a mode creates a binary file not a text file. 
+ - By default, the open file mode is "r"
+ 
+ - If you don't close a file after opening it, you might corrupt or lose the data in it.
+ - Use the 'with open()' statement to ensure a file is closed after opening and working on it.
+ 
+ >> with open("file.txt") as file:
+ >>   # read from or write to file
+ >>   file. ...
+ >>   # ...
+ >> # file is closed automatically
+ 
+
+Reading data from files
+-----------------------
+- For loop can be used to loop over the lines in a file and read data. 
+- Use a .strip() method to delete spaces / tabs / newline / line breaks at the beginning and end of each line in the file content. 
+
+- You can only loop through and read the content of a file once because the read cursor / pointer moves from the start to the end of the file content and is not reset. 
+- Use a .seek() method to manually place the read cursor at any position in the file content.
+
+- file.readlines() reads the entire file content in one go without using a for loop.
+
+- You can specify the end argument of a print() statament. By default, the end argument is "\n"
+>> print(<string>, end = "\n")
