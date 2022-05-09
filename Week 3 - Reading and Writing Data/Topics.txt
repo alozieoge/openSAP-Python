@@ -69,6 +69,7 @@ Mode | Description                                             |
 
 Reading data from files
 -----------------------
+>> file.read()
 - For loop can be used to loop over the lines in a file and read data. 
 - Use a .strip() method to delete spaces / tabs / newline / line breaks at the beginning and end of each line in the file content. 
 
@@ -80,3 +81,21 @@ Reading data from files
 - You can specify the end argument of a print() statament. By default, the end argument is "\n"
 >> print(<string>, end = "\n")
 
+
+Writing data to files
+---------------------
+>> file.write()
+- You can only write strings to file. 
+- Write lines by specifying line break escape character '\n'. 
+
+
+Formatting output
+-----------------
+>> print("...", sep=" ", end="\n")
+
+- F-strings:
+  - Supports replacing values of variables in a string. 
+  - Supports additional formatting details.
+  
+>> f"{value_1:10s}" # Align content of value_1 to the left and fit within 10 spaces. 
+>> f"{value_2:5d}"  # Align content of value_2 to the right and fit within 5 spaces. 
