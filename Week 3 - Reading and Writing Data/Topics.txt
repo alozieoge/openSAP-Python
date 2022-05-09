@@ -97,5 +97,6 @@ Formatting output
   - Supports replacing values of variables in a string. 
   - Supports additional formatting details.
   
->> f"{value_1:10s}" # Align content of value_1 to the left and fit within 10 spaces. 
->> f"{value_2:5d}"  # Align content of value_2 to the right and fit within 5 spaces. 
+>> f"{value_1:10s}" # The content of value_1 is a string and should fit within 10 spaces. 
+>> f"{value_2:5d}"  # The ccontent of value_2 is a decimal and should fit within 5 spaces. 
+>> f"{value_3:6.2f}"  # The content of value_3 is a floating point number and should fit within 6 spaces and displayed to 2 decimal places. 
