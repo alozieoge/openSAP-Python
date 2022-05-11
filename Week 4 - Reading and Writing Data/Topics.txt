@@ -100,3 +100,21 @@ Formatting output
 >> f"{value_1:10s}" # The content of value_1 is a string and should fit within 10 spaces. 
 >> f"{value_2:5d}"  # The ccontent of value_2 is a decimal and should fit within 5 spaces. 
 >> f"{value_3:6.2f}"  # The content of value_3 is a floating point number and should fit within 6 spaces and displayed to 2 decimal places. 
+
+
+String Methods
+--------------
+- Reading and writing data to and from file requires manipulation of strings. 
+
+ Method       | Description
+--------------+---------------------------------------------------------------------------------------
+.count()      | Count occurrences of (non-overlapping) substrings
+.replace()    | Replace a substring a given number of times
+.strip()      | Deletes spaces, tabs, linebreaks and similar at the beginning and the end of a string
+.split()      | Return a list of the string elements, separated by given separator
+.join()       | Join input strings, separated by string invoking the method. Not applied after the last item 
+.upper()      | Make all characters UPPERCASE
+.lower()      | Make all characters lowercase
+.title()      | Make the first letter of every word in the string UPPERCASE and the rest lowercase
+.capitalize() | Change the first letter of a string to UPPERCASE while making the rest lowercase
+
