@@ -117,4 +117,3 @@ String Methods
 .lower()      | Make all characters lowercase
 .title()      | Make the first letter of every word in the string UPPERCASE and the rest lowercase
 .capitalize() | Change the first letter of a string to UPPERCASE while making the rest lowercase
-
