@@ -1,0 +1,44 @@
+Week 5 - Functions
+==================
+
+Objectives
+----------
+1. Why functions?
+2. Returning results from functions
+3. Adding parameters to functions
+4. Visibility of variables
+5. Combining functions
+6. Methods vs. functions
+7. Destructuring assignment
+
+
+Functions
+---------
+- A function maps an element / set of element x to another element / set of elements y.
+
+Structure of a function:
+- name
+- input parameters
+- process input
+- return output
+
+Why functions?
+- Structures a program. 
+- Makes a program more readable.
+- Enables reusability of code.
+
+Python function structure:
+- `def` keyword
+- function name
+- optional parameter list
+- colon :
+- docstring
+- function body
+  - indented statements
+  - optional return statement
+  
+- Docstrings provide information on what a function does.
+- To view a function docstring:
+>> function_name?
+
+- Use a docstring to provide explanation / description of your functions, especially when creating them.
