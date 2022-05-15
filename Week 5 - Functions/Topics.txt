@@ -62,3 +62,34 @@ Returning results from functions
 
 - The `return` keyword denotes the end of execution / exit point in a function. 
 - Any statement after the return statement is not executed.
+
+
+Adding parameters to functions
+------------------------------
+- Function parameters enable us to:
+  - adapt the function to different scenarios
+  - reuse functions with different inputs / arguments
+  
+- A function can be defined with 0, 1, 2 ... parameters
+- If a function parameter is provided with a default value, the default value is used if no user input argument is provided.
+
+Convention: 
+- If a function returns True or False, define the function name as `is_...`
+- If a function returns True or False, you can directly return the result of the comparison from the function.
+
+- You can specify the arguments to a function in any order by using the parameter names when calling the function. 
+
+
+Visibility of variables / Variable scope
+----------------------------------------
+- Global variables are accessible everywhere in the program. 
+- Local variables are only visible within their scope of definition e.g. inside a function, loop, conditional block.
+
+- Local variables can hide global variables. 
+  - A local variable inside a function will have priority / be considered over (hide) a global variable with the same name, within that function.
+
+** It is recommended not to use / manipulate global variables within a local context / function. **
+
+- To use a global variable in a function, either: 
+  - Pass it as an argument to the function and if necessary, return the variable as an output. ✅
+  - Specify it as a global variable using the `global` keyword. ❌
