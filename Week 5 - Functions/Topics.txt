@@ -42,3 +42,23 @@ Python function structure:
 >> function_name?
 
 - Use a docstring to provide explanation / description of your functions, especially when creating them.
+
+
+Returning results from functions
+--------------------------------
+- Functions can have 0, 1, 2 ... return values. 
+- A return value is specified in a function using:
+>> return return_value
+
+- If there is no return value, a `None` (an object of NoneType) is returned.
+- The return value can be a simple (string, int, boolean, float) or complex (list, dict, set, tuple) data type.
+
+- If a function returns a boolean (True / False), the function name can be called directly in a conditional (if) statement. 
+>> def is_python_good():
+>>   return True
+>>
+>> if is_python_good:
+>>   print("Learn Python!")
+
+- The `return` keyword denotes the end of execution / exit point in a function. 
+- Any statement after the return statement is not executed.
