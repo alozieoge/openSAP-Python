@@ -84,6 +84,7 @@ Visibility of variables / Variable scope
 ----------------------------------------
 - Global variables are accessible everywhere in the program. 
 - Local variables are only visible within their scope of definition e.g. inside a function, loop, conditional block.
+- Parameter variables are only visivble within a function.
 
 - Local variables can hide global variables. 
   - A local variable inside a function will have priority / be considered over (hide) a global variable with the same name, within that function.
@@ -93,3 +94,75 @@ Visibility of variables / Variable scope
 - To use a global variable in a function, either: 
   - Pass it as an argument to the function and if necessary, return the variable as an output. ✅
   - Specify it as a global variable using the `global` keyword. ❌
+  
+  
+Combining functions
+-------------------
+1. Nested functions:
+- Functions can be nested within other functions to make code more compact.
+- Code execution starts from the innermost nested function to the outermost.
+
+- Multiple / more than 2 functions can be nested at once but this reduces code readability.
+- Use helper variables instead.
+
+2. Invoked functions:
+- A function can invoke or call other functions inside its definition code block.
+
+
+Methods vs Functions
+--------------------
+Programming paradigms:
+1. Procedural programming:
+- Program is strucured in procedure.
+- Each procedure is a function.
+>> print("")
+>> len(x)
+
+2. Object-oriented programming: 
+- Objects contain data and methods.
+- Methods are invoked by calling the object with the method.
+- A method may contain 0, 1, 2 ... parameters
+>> "python".upper()
+>> ".".join([x1, x2])
+
+- Functions can be nested. 
+- Methods can be chained. 
+- Both nesting and chaining involvex directly passing the output of a function / method as input to another function / method.
+
+
+Destructuring assignments
+-------------------------
+- Destructuring simplifies access to individual elements in lists and tuples. 
+- It splits tuples / lists into individual variables (*). 
+
+Underscore _ expression:
+>> numbers = [1,2,3]
+>> smallest, _, largest = numbers
+
+- By convention, `_` is a throwaway-variable in Python but it is still a variable.
+- You need to know the number of variables in the container, else you get a ValeError - too many values to upack / not enough values to unpack.
+
+Asterisk * expression:
+- Used to assign everything else in the destructuring assignment.
+>> smallest, *remaining = numbers
+>> *others, largest = numbers
+
+- To assign everything else to a single variable as a tuple or list, use *_
+>> numbers = [1,2,3,4,5,6]
+>> smallest, *_, largest = numbers
+>> print(_) 
+>> [2,3,4,5]
+
+- Destructuring assignment can be used with any sequence datatype inclusing range. 
+>> first, second, *rest = range(0,10,2)
+
+- Destructuring can also be used in loops to split multiple variables being looped together.
+- Better alternative to looping with index.
+>> my_list = [(item11, item12), (item21, item22), (item31, item32)]
+>> for i1, i2 in my_list:  // destructuring assignment
+>>    print(i1, i2)
+
+
+Notes:
+- In the definition statement of the function, the parameters without default values must be listed before the parameters with default values. 
+- Else a `SyntaxError: non-default argument follows default argument` is returned.
