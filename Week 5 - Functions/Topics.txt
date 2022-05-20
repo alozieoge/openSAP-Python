@@ -166,3 +166,4 @@ Asterisk * expression:
 Notes:
 - In the definition statement of the function, the parameters without default values must be listed before the parameters with default values. 
 - Else a `SyntaxError: non-default argument follows default argument` is returned.
+
