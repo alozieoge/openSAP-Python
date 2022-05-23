@@ -11,3 +11,27 @@ Lessons
 6. Examples of non-standard libraries
 7. Summary
 
+
+1. What are libraries?
+----------------------
+- Libraries allow structuring and reusability of code on a large scale.
+  - Prevents confusion, difficulty to maintain, copy-pasting, etc.
+  
+- Modularization : System design architecture that combines several independent components or modules. 
+- It makes software cleaner and more reusable.
+
+Benefits of Modules:
+1. Can be created and tested independent of the system.
+2. Can be reused in other products. 
+3. Can be exchanged upon failure.
+4. Can be upgraded with improved versions.
+
+- Functions provide a low-level form of modularization
+  - has a defined task.
+  - can be developed and tested independent of other functions.
+  - provides abstraction of implementation (inner working) details.
+  
+Types of Python Libraries:
+1. Python standard library: ships with default Python installation.
+2. Python ecosystem: open-source custom libraries developed for specific tasks. Available on Python Package Index (https://pypi.org)
+
