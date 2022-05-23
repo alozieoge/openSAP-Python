@@ -1,0 +1,13 @@
+Python Libraries
+================
+
+Lessons
+-------
+1. What are libraries?
+2. Importing libraries
+3. Math and statistic libraries
+4. Other standard libraries
+5. Installing additional libraries
+6. Examples of non-standard libraries
+7. Summary
+
