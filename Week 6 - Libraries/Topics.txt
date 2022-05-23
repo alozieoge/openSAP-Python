@@ -84,3 +84,14 @@ Other Standard Libraries
 >>    field_names = ["col1", "col2", ... , "col3"]
 >>    writer = csv.DictWriter(output_file, field_names)
 >>    writer.writerows()
+
+
+Installing Additional Libraries
+-------------------------------
+- There are > 100,000 additional Python libraries available.
+
+- To find and install additional libraries:
+  - Google
+  - pypi.org
+  - conda-forge
+  ...
