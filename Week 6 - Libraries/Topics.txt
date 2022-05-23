@@ -12,8 +12,8 @@ Lessons
 7. Summary
 
 
-1. What are libraries?
-----------------------
+What are Libraries?
+-------------------
 - Libraries allow structuring and reusability of code on a large scale.
   - Prevents confusion, difficulty to maintain, copy-pasting, etc.
   
@@ -35,3 +35,52 @@ Types of Python Libraries:
 1. Python standard library: ships with default Python installation.
 2. Python ecosystem: open-source custom libraries developed for specific tasks. Available on Python Package Index (https://pypi.org)
 
+
+Importing Libraries
+-------------------
+- You can import complete libraries or required functions.
+
+- Importing a library creates a namespace into which the functions of the library are imported. 
+- The library namespace can be given an alias and functions can be called from the alias.
+>> import math as m
+>> m.pow(...)
+
+- Importing individual functions from a library is done using the `from ... import ...` statement. 
+>> from math import sin, pi
+>> x = sin(3 * pi / 2)
+
+- Beware of conflicting namespaces with internal function names when directly importing functions from external libraries. 
+- Use the fully-qualified name to avoid such conflicts.
+>> m.sin(...)
+
+- Use the established / popular syntax to import libraries or functions from libraries.
+
+Tip: To write and style Python code in Markdown:
+
+```python
+   ... code goes here ...
+```
+
+Math and Statistics Libraries
+-----------------------------
+- `math`, `random` and `statistics` are part of the Python standard library.
+
+
+Other Standard Libraries
+------------------------
+- `calendar` library: provides functions to work with dates.
+- `csv` library: simplifies handling of CSV files.
+
+- Always check if there is an existing function in the Python standard library before implementing one.
+
+- In the csv library, use the DictReader() when reading files with header row. It creates a dictionary with the column name as the key.
+>> with open("file-to-read.csv") as f:
+>>   dict_reader = csv.DictReader(f)
+>>   for row in dict_reader:
+>>      print(row)
+
+- Write data to a csv file using the csv.DictWriter(). 
+>> with open("file-to-write.csv") as output_file:
+>>    field_names = ["col1", "col2", ... , "col3"]
+>>    writer = csv.DictWriter(output_file, field_names)
+>>    writer.writerows()
