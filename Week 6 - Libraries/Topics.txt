@@ -95,3 +95,12 @@ Installing Additional Libraries
   - pypi.org
   - conda-forge
   ...
+
+
+Non-standard Python Libraries
+-----------------------------
+- requests: communicate with web servers.
+- BeautifulSoup: parse and analyse web pages.
+- tkinter: create GUIs.
+- Pandas: analyse data.
+- Matplotlib: plot charts, graphs.
