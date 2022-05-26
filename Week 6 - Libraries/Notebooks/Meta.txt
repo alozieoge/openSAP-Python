@@ -1,0 +1,1 @@
+Jupyter notebooks of lessons, exercises and assignments for Week 6 - Libraries.
