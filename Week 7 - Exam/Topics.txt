@@ -1,0 +1,5 @@
+Final Exam
+==========
+
+- Part 1: 30 multiple choice questions. 
+- Part 2: Wordle program in Python.
