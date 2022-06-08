@@ -1,1 +1,1 @@
-Completion certificates for the OpenSAP Python Course.
+Completion certificates for the OpenSAP Introduction to Python course.
